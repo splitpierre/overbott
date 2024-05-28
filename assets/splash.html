@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OverBott</title>
+    <style>
+      @keyframes gradientloop {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .gradientloop {
+        animation: gradientloop 20.75s ease infinite;
+        background: #242736;
+        background: -moz-linear-gradient(
+          60deg,
+          #242736 0%,
+          #392f38 25%,
+          #5d3a3a 50%,
+          #ffb357 75%,
+          #fdc96d 100%
+        );
+        background: -webkit-linear-gradient(
+          60deg,
+          #242736 0%,
+          #392f38 25%,
+          #5d3a3a 50%,
+          #ffb357 75%,
+          #fdc96d 100%
+        );
+        background: linear-gradient(
+          60deg,
+          #242736 0%,
+          #392f38 25%,
+          #5d3a3a 50%,
+          #ffb357 75%,
+          #fdc96d 100%
+        );
+        background-size: 200% 100%;
+      }
+    </style>
+  </head>
+  <body class="gradientloop" style="overflow: hidden">
+    <!-- Example of adding an audio element -->
+    <div style="display: none">
+      <audio id="splashAudio" controls>
+        <source src="./audio/splash.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      "
+    >
+      <img src="./proto2-1.png" alt="OverBott" style="width: 400px" />
+    </div>
+
+    <!-- Example of adding a Lottie animation -->
+    <!-- <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+
+    <dotlottie-player
+      src="https://lottie.host/b8d973ba-452f-4447-9a9d-b1ae7f2b3562/ZEaCq2Ho3c.json"
+      background="transparent"
+      speed="1"
+      style="width: 1400px; height: 800px"
+      loop
+      autoplay
+    ></dotlottie-player> -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const splashAudio = document.getElementById('splashAudio');
+        splashAudio.volume = 0.3; // Set the volume to 50% (0.5)
+      });
+    </script>
+  </body>
+</html>

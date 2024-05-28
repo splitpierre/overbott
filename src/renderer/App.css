@@ -1,0 +1,122 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+body {
+  /* position: relative;
+  color: white; */
+  background: 'transparent !important';
+  /* background: linear-gradient(
+    200.96deg,
+    #fedc2a -29.09%,
+    #57ddd9 51.77%,
+    #7a2c9e 129.35%
+  ); */
+  /* font-family: sans-serif;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: middle; */
+  /* color: #1f1f1f; */
+}
+
+/* button {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  appearance: none;
+  font-size: 1.3rem;
+  box-shadow:
+    0px 8px 28px -6px rgba(24, 39, 75, 0.12),
+    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+  transition: all ease-in 0.1s;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  height: fit-content;
+  width: fit-content;
+  margin: 10px;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.Hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+} */
+/** Light white semi-transparent */
+.appPage {
+  background-color: rgba(255, 255, 255, 0.897);
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow:
+    0px 8px 28px -6px rgba(24, 39, 75, 0.12),
+    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bubble {
+  --r: 5px; /* the radius */
+  --t: 7px; /* the size of the tail */
+
+  /* max-width: 300px; */
+  padding: calc(2 * var(--r) / 3);
+  -webkit-mask:
+    radial-gradient(var(--t) at var(--_d) 0, #0000 98%, #000 102%) var(--_d)
+      100% / calc(100% - var(--r)) var(--t) no-repeat,
+    conic-gradient(at var(--r) var(--r), #000 75%, #0000 0) calc(var(--r) / -2)
+      calc(var(--r) / -2) padding-box,
+    radial-gradient(50% 50%, #000 98%, #0000 101%) 0 0 / var(--r) var(--r) space
+      padding-box;
+  /* background: linear-gradient(135deg, #fe6d00, #1384c5) border-box; */
+  /* color: #fff; */
+}
+.left {
+  --_d: 0%;
+  border-left: var(--t) solid #0000;
+  margin-right: var(--t);
+  place-self: start;
+}
+.right {
+  --_d: 100%;
+  border-right: var(--t) solid #0000;
+  margin-left: var(--t);
+  place-self: end;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  /* text-align: center; */
+}
+
+.MuiAccordion-root {
+  margin: 3px 0 !important;
+}
+
+.statsServices button {
+  min-width: 25px !important;
+  padding: 0px 7px;
+}
