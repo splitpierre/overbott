@@ -2,6 +2,10 @@
 </p>
 
 <p align="center">
+<b>NOTICE</b>: This is an experimental, unstable, incomplete project. Maybe give me a star so I continue working on it ;)
+</p>
+
+<p align="center">
 🌊 Welcome aboard the OverBott express, where innovation meets intuition and privacy races ahead at warp speed! 🚀🐢
 </p>
 
